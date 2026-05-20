@@ -44,6 +44,12 @@ Adds a bill export feature to any New API deployment's usage log page.
 
 Works on any New API deployment — not tied to a specific domain.
 
+## 开发声明 / Development Note
+
+本项目从需求整理、代码实现、README、SEO 优化到发布 GitHub，全程由 AI 辅助完成。开发过程中使用了 [cli.999554.xyz](https://cli.999554.xyz)（云舟中转站）提供的 API 服务。这个项目本身就是 AI 开发工作流的产物。
+
+This project was built end-to-end with AI assistance — from requirements, coding, README, SEO optimization, to GitHub release. API services used during development were provided by [cli.999554.xyz](https://cli.999554.xyz). The project itself is a product of an AI-driven development workflow.
+
 ## 许可 / License
 
 MIT
