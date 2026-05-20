@@ -1,0 +1,49 @@
+# New API 使用日志导出 / Usage Log Exporter
+
+为任意 [New API](https://github.com/Calcium-Ion/new-api) 部署的使用日志页面添加账单导出功能。
+
+Adds a bill export feature to any New API deployment's usage log page.
+
+## 安装 / Install
+
+1. 下载本仓库 ZIP 并解压，或 `git clone` 到本地
+2. Chrome 打开 `chrome://extensions`
+3. 右上角开启 **开发者模式**
+4. 点击 **加载未打包的扩展程序**，选择本目录
+5. 打开任意 New API 实例的 `/console/log` 页面，工具栏右侧出现 **导出账单** 按钮
+
+---
+
+1. Download and extract this repo, or `git clone`
+2. Open `chrome://extensions` in Chrome
+3. Enable **Developer mode** (top right)
+4. Click **Load unpacked** and select this folder
+5. Visit `/console/log` on any New API instance — an **导出账单** button appears
+
+## 功能 / Features
+
+- 点击按钮弹出配置窗口，可筛选：
+  - 时间范围（默认当天）
+  - 令牌名称、分组、类型（消费/充值/全部）、模型名称
+- 导出为 UTF-8 CSV（Excel 直接打开不乱码）
+- 包含完整的计费明细：Token 用量、花费(USD)、渠道、倍率、Request ID
+- 自动分页拉取全部数据
+
+---
+
+- Click the button to open a filter dialog:
+  - Date range (defaults to today)
+  - Token name, Group, Type (consume/recharge/all), Model name
+- Exports as UTF-8 CSV (BOM included, Excel-ready)
+- Full billing details: token usage, cost (USD), channel, ratios, Request ID
+- Automatically fetches all pages
+
+## 兼容性 / Compatibility
+
+匹配所有 New API 实例的 `/console/log*` 路径，不限于特定域名。
+
+Works on any New API deployment — not tied to a specific domain.
+
+## 许可 / License
+
+MIT
