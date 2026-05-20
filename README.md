@@ -5,6 +5,12 @@
 [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-blue?logo=googlechrome)](https://github.com/jiusimeng8-cmd/new-api-log-exporter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+## 关键词
+
+New API 导出 · One API 导出 · 使用日志导出 · 账单导出 · CSV 导出 · API 计费 · Token 统计 · Chrome 扩展 · OpenAI 中转 · 大模型 API 管理
+
+---
+
 ## 这是什么？
 
 一个轻量 Chrome 扩展，为 [New API](https://github.com/Calcium-Ion/new-api)（及 [One API](https://github.com/songquanpeng/one-api)）的使用日志页面增加 **导出账单** 按钮，一键将所有 API 调用记录导出为 CSV 文件，方便对账、报销、成本分析。
@@ -40,6 +46,13 @@
 
 设置好筛选条件后点「导出 CSV」，等待进度条完成即可下载。
 
+## 适用场景
+
+- **API 服务商**：按月导出用户消费记录，用于对账和结算
+- **企业用户**：导出团队 API 调用明细，进行成本分析和预算控制
+- **个人开发者**：追踪自己的 Token 用量和花费，优化模型选择
+- **财务审计**：导出完整的调用日志作为报销凭证
+
 ## 兼容性
 
 匹配所有 New API / One API 实例的 `/console/log*` 路径，不限于特定域名。自动适配目标站点的 API 地址和额度换算。
@@ -57,6 +70,12 @@ MIT
 # New API Usage Log Exporter
 
 > Chrome extension — adds one-click CSV bill export to any New API / One API console
+
+## Keywords
+
+new-api export · one-api export · usage log export · bill export · csv export · api billing · token tracking · chrome extension · openai gateway · llm api management
+
+---
 
 ## What is this?
 
@@ -93,6 +112,13 @@ Click **导出账单** → a filter dialog appears:
 
 Set your filters and click **导出 CSV**. Wait for the progress bar to complete, then your file downloads automatically.
 
+## Use Cases
+
+- **API Providers**: export monthly user billing records for reconciliation
+- **Enterprise Users**: export team API call details for cost analysis and budget control
+- **Individual Developers**: track personal token usage and spending, optimize model selection
+- **Financial Audit**: export complete call logs as reimbursement records
+
 ## Compatibility
 
 Matches `/console/log*` on any New API / One API instance — not tied to a specific domain. Automatically adapts to the target site's API base URL and quota conversion.
@@ -104,3 +130,13 @@ This project was built end-to-end with AI assistance — from requirements, codi
 ## License
 
 MIT
+
+
+## 相关项目 / Related Projects
+
+- [New API](https://github.com/Calcium-Ion/new-api) — 下一代大模型 API 网关，AI 资产管理与分发系统
+- [One API](https://github.com/songquanpeng/one-api) — OpenAI 接口管理 & 分发系统
+
+---
+
+*Made with ❤️ by [jiusimeng8-cmd](https://github.com/jiusimeng8-cmd)*
