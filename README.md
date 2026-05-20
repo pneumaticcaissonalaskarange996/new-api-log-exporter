@@ -1,8 +1,31 @@
 # New API 使用日志导出 / Usage Log Exporter
 
-为任意 [New API](https://github.com/Calcium-Ion/new-api) 部署的使用日志页面添加账单导出功能。
+> Chrome 浏览器扩展 — 为 New API / One API 控制台添加一键导出账单 CSV 功能
 
-Adds a bill export feature to any New API deployment's usage log page.
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-blue?logo=googlechrome)](https://github.com/jiusimeng8-cmd/new-api-log-exporter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+## 这是什么？ / What is this?
+
+一个轻量 Chrome 扩展，为 [New API](https://github.com/Calcium-Ion/new-api)（及 [One API](https://github.com/songquanpeng/one-api)）的  使用日志页面增加 **导出账单** 按钮，一键将所有 API 调用记录导出为 CSV 文件，方便对账、报销、成本分析。
+
+A lightweight Chrome extension that adds an **Export Bill** button to the usage log page of any New API / One API deployment. Export all API call records to CSV with one click — perfect for billing reconciliation, expense reporting, and cost analysis.
+
+## 能做什么？ / What can it do?
+
+- 📊 **一键导出全部日志**为 CSV（Excel 直接打开）
+- 🔍 **按条件筛选导出**：时间范围、令牌、分组、消费类型、模型
+- 💰 **完整计费明细**：Token 用量、花费(USD)、渠道、分组倍率、模型倍率、Request ID
+- 🌐 **通配任意 New API/One API 站点**，不限域名
+- ⚡ **自动分页拉取**，上千条数据也能快速导出
+
+---
+
+- 📊 **One-click CSV export** (Excel-ready)
+- 🔍 **Filter by**: date range, token name, group, type, model name
+- 💰 **Full billing details**: token usage, cost (USD), channel, ratios, Request ID
+- 🌐 **Universal**: works on any New API / One API deployment
+- ⚡ **Auto-pagination**: fetches thousands of records efficiently
 
 ## 安装 / Install
 
